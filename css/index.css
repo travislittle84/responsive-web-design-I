@@ -1,283 +1,337 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-/*ol, ul {
-	list-style: none;
-}*/
-blockquote, q {
-	quotes: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
 }
 
-/* Your code starts here! */
-
-h1 {
-	font-size: 75px;
-	text-align: center;
-	
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+  margin: 0 auto;
+  width: 880px;
 }
 
-h3 {
-	font-size: 28px;
+/* Font / Text related classes */
+.f1 {
+  font-size: 5rem;
 }
-.menu-container {
-	width: 100%;
-	padding: 5px 2px 0 0;
-	height: 45px;
-	
-	display: flex;	
+.f2 {
+  font-size: 2.25rem;
 }
-
-.menu-container nav {
-	width: 100%;	
-	display: flex;
-	flex-flow: wrap;
-	justify-content: space-between;
-	align-items: center;
+.f3 {
+  font-size: 1.5rem;
 }
-
-.menu-container a:link {
-	text-decoration: none;
-	color: #a7a7a7;
-	font-size: 16px;
-	text-decoration: bold;
+.f4 {
+  font-size: 1.25rem;
 }
-.menu-container a:hover {
-	text-decoration: underline;
+.f7 {
+  font-size: 0.75rem;
 }
-.menu-container a::visited {
-	color: #a7a7a7;
+.fw-l {
+  font-weight: lighter;
 }
-.menu-container a::active {
-	color: #a7a7a7;
+.center-text {
+  text-align: center;
+}
+.no-underline {
+  text-decoration: none;
 }
 
-.header-container .flex-column {
-	width: 425px;
-	height: 400px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.list-style-square {
+  list-style-type: square;
 }
 
-.header-container {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
-	flex-flow: wrap;
+/* Cursor */
+.pointer {
+  cursor: pointer;
 }
 
-.header-item {
-	flex-direction: column;
-	justify-content: center;
-	width: 425px;
-	height: 400px;
+/* Color related classes */
+.light-gray {
+  color: #f4f3f4;
+}
+.medium-gray {
+  color: #9c9c9c;
 }
 
-.flex-column input {
-	padding: 2px 40px 2px 40px;
-	border: 1px solid black;
-	background: white;
-	/*display: block;
-	margin: 0 auto;*/
+.black {
+  color: black;
 }
 
-.section-container {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
+.bg-white {
+  background-color: white;
+}
+.bg-light-gray {
+  background-color: #f4f3f4;
 }
 
-.content-container {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
+/* Margin related classes */
+/* Pixel */
+.mt30px {
+  margin-top: 30px;
+}
+.mt40px {
+  margin-top: 40px;
+}
+.mt80px {
+  margin-top: 80px;
 }
 
-.content-item {
-	width: 425px;
-	padding: 25px 5px 25px 5px;
+.mb15px {
+  margin-bottom: 15px;
+}
+.mb30px {
+  margin-bottom: 30px;
+}
+.mb40px {
+  margin-bottom: 40px;
 }
 
-.small {
-	width: 292px;
+/* Rem */
+.mb1 {
+  margin-bottom: 1rem;
+}
+.ml3 {
+  margin-left: 3rem;
 }
 
-.smallest {
-	width: 150px;
+/* Padding related classes */
+/* Pixel */
+.pt30px {
+  padding-top: 30px;
 }
 
-#header-item-image {
-	/*display: flex;*/
-	background-image: url("/great-idea/img/header-img.png");
-	background-repeat: no-repeat;
-	background-size: auto;
-	background-position: right;
+.pb30px {
+  padding-bottom: 30px;
 }
 
-#great-idea-logo-image {
-	width: 183px;
-	height: 36px;
-	background-image: url("/great-idea/img/logo.png");
-	background-size: auto;
-	background-repeat: no-repeat;
-
+/* Rem */
+.pa1 {
+  padding: 1rem;
 }
 
-#features-about-section {
-	border-top: 1.5px solid black;
-	margin-top: 40px;
+.pt025 {
+  padding-top: 0.25rem;
+}
+.pt5 {
+  padding-top: 5rem;
 }
 
-#mid-page-accent-image {
-	width: 100%;
-	height: 182px;
-	background-image: url("/great-idea/img/mid-page-accent.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+.pr025 {
+  padding-right: 0.25rem;
 }
 
-#services-product-vision-section {
-	border-bottom: 1.5px solid black;
+.pb025 {
+  padding-bottom: 0.25rem;
 }
 
-#footer-copyright {
-	text-align: center;
-	font-size: 14px;
+.pb1 {
+  padding-bottom: 1rem;
 }
-/****************** SERVICES PAGE STYLING ***************/
-
-.services-content-item input {
-	margin: 20px 0 5px 0;
-	padding: 10px 40px 10px 40px;
-	border-radius: 5.5px;
-	border: 1px solid black;
-	background: #ffffff;
-	font-size: 11px;
+.pb5 {
+  padding-bottom: 5rem;
 }
 
-.services-header-container {
-	display: flex;
-	flex-flow: column nowrap;
-	margin: 25px 0 25px 0;
-	border-bottom: 1px solid black;
+.pl025 {
+  padding-left: 0.25rem;
+}
+.pl1 {
+  padding-left: 1rem;
 }
 
-.services-header-image {
-	width: 100%;
-	height: 200px;
-	background-image: url("/great-idea/img/services-header.jpg");
-	background-size: cover;
-	background-position: auto;
+/* Width related classes */
+.w11 {
+  width: 11rem;
+}
+.w-33 {
+  width: 33.33%;
+}
+.w-47-75 {
+  width: 47.75%;
+}
+.w-50 {
+  width: 50%;
 }
 
-.services-header-item {
-	margin: 25px 0 25px 0;	
+/* Border related classes */
+.ba {
+  border: 1px solid black;
+}
+.bb {
+  border-bottom: 1px solid black;
+}
+.bt {
+  border-top: 1px solid black;
 }
 
-.services-content-container {
-	width: 100%;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	border-bottom: 2px solid black;
-	padding: 0 0 20px 0;
-	
+.br2 {
+  border-radius: 0.25rem;
 }
 
-.services-content-item {
-	border: 1px solid black;
-	width: 400px;
-	padding: 18px;
-	margin: 20px 0 20px 0;
-	background: #f4f3f4;
+.bw2 {
+  border-width: 2px;
 }
 
-.bottom-container {
-	padding: 20px 0 20px 0;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	
+/* Flex related classes */
+.flex {
+  display: flex;
 }
-
-.bottom-item {
-	width: 380px;
-	margin: 20px 20px 20px 0;
+.flex-column {
+  flex-direction: column;
 }
-
-.bottom-item-image {
-	width: 100%;
-	height: 300px;
-	background-image: url("/great-idea/img/services-info.png");
-	background-size: cover;
-	background-position: auto;
+.items-center {
+  align-items: center;
 }
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-@media (max-width: 800px) {
-
+.justify-around {
+  justify-content: space-around;
 }
-
-@media (max-width: 500px) {
-
+.justify-between {
+  justify-content: space-between;
 }
-
-
-
+.justify-center {
+  justify-content: center;
+}
