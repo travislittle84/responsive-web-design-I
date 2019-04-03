@@ -324,38 +324,56 @@ h3 {
 
 /************ Start Media Queries ********/
 
-/* Desktop */
+/* Tablet */
 @media (max-width: 800px) {
   .menu-container {
-    height: 100px;
+    height: 125px;
+    margin-bottom: 60px;
+    /*border: 1px solid red;*/
   }
   
   #great-idea-logo-image {
     width: 100%;
     background-position: center;
     order: -1;
-    /*align-self: center;*/
   } 
   
   .menu-container nav {
     /*flex-flow: nowrap;*/
+    /*border: 1px solid red;*/
     height: inherit;
-    justify-content: space-between;
+    justify-content: space-around;
     
   }
 
   .menu-container nav a {
-    /*margin: 0 10px 0;*/
+    text-decoration: bold;
     /*align-self: space-between;*/
   }
 
   .header-container {
     border: 1px solid green;
+    margin-bottom: 70px;
+    
+    
+    
   }
 
   .flex-column {
-    border: 1px solid green;
-    justify-content: space-around;
+    border: 1px solid red;
+    display: block;
+    margin: 0 auto;
+    
+    /*justify-content: space-around;*/
+  }
+
+  .header-container .flex-column {
+    height: unset;
+    
+  }
+
+  .header-container .flex-column h1 {
+    margin-bottom: 25px;
   }
   
   #header-item-image {
@@ -364,7 +382,7 @@ h3 {
 
 }
 
-/* Tablet */
+/* Mobile */
 @media (max-width: 500px) {
   
   .menu-container nav {
