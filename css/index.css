@@ -149,6 +149,11 @@ h5 {
   margin-bottom: 15px;
 }
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.site-container {
+  padding: 15px;
+}
+
 .container {
   margin: 0 auto;
   width: 880px;
@@ -252,9 +257,11 @@ h3 {
 }
 
 .flex-column input {
-	padding: 2px 40px 2px 40px;
+	padding: 5px 40px 5px 40px;
 	border: 1px solid black;
 	background: white;
+  font-size: 14px;
+  /*font-weight: bold;*/
 }
 
 .section-container {
@@ -271,7 +278,11 @@ h3 {
 
 .content-item {
 	width: 425px;
-	padding: 25px 5px 25px 5px;
+	padding: 25px 10px 25px 10px;
+}
+
+.content-item p {
+  /*padding: 5px;*/
 }
 
 .small {
@@ -300,7 +311,7 @@ h3 {
 }
 
 #features-about-section {
-	border-top: 1.5px solid black;
+	border-top: 2px solid black;
 	margin-top: 40px;
 }
 
@@ -314,7 +325,7 @@ h3 {
 }
 
 #services-product-vision-section {
-	border-bottom: 1.5px solid black;
+	border-bottom: 2px solid black;
 }
 
 #footer-copyright {
@@ -327,7 +338,7 @@ h3 {
 /* Tablet */
 @media (max-width: 800px) {
   .menu-container {
-    height: 125px;
+    height: 115px;
     margin-bottom: 60px;
     /*border: 1px solid red;*/
   }
@@ -348,23 +359,16 @@ h3 {
 
   .menu-container nav a {
     text-decoration: bold;
-    /*align-self: space-between;*/
   }
 
   .header-container {
-    border: 1px solid green;
-    margin-bottom: 70px;
-    
-    
-    
+    margin-bottom: 70px; 
   }
 
   .flex-column {
-    border: 1px solid red;
     display: block;
     margin: 0 auto;
-    
-    /*justify-content: space-around;*/
+
   }
 
   .header-container .flex-column {
