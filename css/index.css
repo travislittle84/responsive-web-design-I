@@ -242,16 +242,11 @@ h3 {
 
 .header-container {
 	display: flex;
-	/*width: 100%;*/
 	justify-content: space-between;
-	/*align-items: center;*/
-	/*align-content: center;*/
 	flex-flow: wrap;
 }
 
 .header-item {
-	/*flex-direction: column;*/
-	/*justify-content: center;*/
 	width: 425px;
 	height: 400px;
 }
@@ -260,8 +255,6 @@ h3 {
 	padding: 2px 40px 2px 40px;
 	border: 1px solid black;
 	background: white;
-	/*display: block;
-	margin: 0 auto;*/
 }
 
 .section-container {
