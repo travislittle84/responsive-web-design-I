@@ -388,11 +388,57 @@ h3 {
 
 /* Mobile */
 @media (max-width: 500px) {
+  .site-container{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  .menu-container {
+    height: unset;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   
   .menu-container nav {
-    flex-flow: nowrap;
+    
+    flex-flow: column nowrap;
     border: 1px solid red;
     
+  }
+
+  .menu-container nav:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  .menu-container nav .menu-item a {
+    /*border: 1px solid black;*/
+    font-size: 18px;
+
+  }
+
+  .menu-item {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid black;
+    /*border-bottom: 1px solid black;*/
+    text-align: center;
+  }
+
+  #great-idea-logo-image {
+    margin-bottom: 20px;
+  }
+
+  #features-about-section {
+    flex-direction: column;
+  }
+
+  #services-product-vision-section {
+    flex-direction: column;
+  }
+
+  .small {
+    width: 100%;
   }
     
 }
