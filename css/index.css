@@ -340,7 +340,6 @@ h3 {
   .menu-container {
     height: 115px;
     margin-bottom: 60px;
-    /*border: 1px solid red;*/
   }
   
   #great-idea-logo-image {
@@ -350,8 +349,6 @@ h3 {
   } 
   
   .menu-container nav {
-    /*flex-flow: nowrap;*/
-    /*border: 1px solid red;*/
     height: inherit;
     justify-content: space-around;
     
@@ -372,8 +369,7 @@ h3 {
   }
 
   .header-container .flex-column {
-    height: unset;
-    
+    height: unset;    
   }
 
   .header-container .flex-column h1 {
@@ -401,9 +397,7 @@ h3 {
   
   .menu-container nav {
     
-    flex-flow: column nowrap;
-    border: 1px solid red;
-    
+    flex-flow: column nowrap;    
   }
 
   .menu-container nav:last-child {
@@ -411,9 +405,7 @@ h3 {
   }
 
   .menu-container nav .menu-item a {
-    /*border: 1px solid black;*/
     font-size: 18px;
-
   }
 
   .menu-item {
@@ -421,12 +413,15 @@ h3 {
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 1px solid black;
-    /*border-bottom: 1px solid black;*/
     text-align: center;
+  }
+  .small {
+    width: 100%;
   }
 
   #great-idea-logo-image {
     margin-bottom: 20px;
+    border-top: 0;
   }
 
   #features-about-section {
@@ -437,9 +432,9 @@ h3 {
     flex-direction: column;
   }
 
-  .small {
-    width: 100%;
-  }
-    
+  #mid-page-accent-image {
+    height: 100px;
+    background-size: cover;
+  }  
 }
 
