@@ -1,3 +1,532 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.site-container {
+  padding: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 880px;
+}
+
+body {
+	line-height: 1;
+}
+/*ol, ul {
+	list-style: none;
+}*/
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+h1 {
+	font-size: 75px;
+	text-align: center;
+	
+}
+
+h3 {
+	font-size: 28px;
+}
+.menu-container {
+	width: 100%;
+	padding: 5px 2px 0 0;
+	height: 45px;
+	
+	/*display: flex;	*/
+}
+
+.menu-container nav {
+	width: 100%;	
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-container a:link {
+	text-decoration: none;
+	color: #a7a7a7;
+	font-size: 16px;
+	text-decoration: bold;
+}
+.menu-container a:hover {
+	text-decoration: underline;
+}
+.menu-container a::visited {
+	color: #a7a7a7;
+}
+.menu-container a::active {
+	color: #a7a7a7;
+}
+
+.header-container .flex-column {
+	width: 425px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+
+.header-item {
+	width: 425px;
+	height: 400px;
+}
+
+.flex-column input {
+	padding: 5px 40px 5px 40px;
+	border: 1px solid black;
+	background: white;
+  font-size: 14px;
+}
+
+.section-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.content-item {
+	width: 425px;
+	padding: 25px 10px 25px 10px;
+}
+
+.content-item p {
+  /*padding: 5px;*/
+}
+
+.small {
+	width: 292px;
+}
+
+.smallest {
+	width: 150px;
+}
+
+#header-item-image {
+	/*display: flex;*/
+	background-image: url("/img/header-img.png");
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: right;
+}
+
+#great-idea-logo-image {
+	width: 183px;
+	height: 36px;
+	background-image: url("/img/logo.png");
+	background-size: auto;
+	background-repeat: no-repeat;
+
+}
+
+#features-about-section {
+	border-top: 2px solid black;
+	margin-top: 40px;
+}
+
+#mid-page-accent-image {
+	width: 100%;
+	height: 182px;
+	background-image: url("/img/mid-page-accent.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#services-product-vision-section {
+	border-bottom: 2px solid black;
+}
+
+#footer-copyright {
+	text-align: center;
+	font-size: 14px;
+}
+
+/****************** SERVICES PAGE STYLING ***************/
+
+.services-content-item input {
+	margin: 20px 0 5px 0;
+	padding: 10px 40px 10px 40px;
+	border-radius: 5.5px;
+	border: 1px solid black;
+	background: #ffffff;
+	font-size: 11px;
+}
+
+.services-header-container {
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 25px 0 25px 0;
+	border-bottom: 1px solid black;
+}
+
+.services-header-image {
+	width: 100%;
+	height: 200px;
+	background-image: url("/img/services-header.jpg");
+	background-size: cover;
+	background-position: auto;
+}
+
+.services-header-item {
+	margin: 25px 0 25px 0;	
+}
+
+.services-content-container {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	padding: 0 0 20px 0;
+	
+}
+
+.services-content-item {
+	border: 1px solid black;
+	width: 400px;
+	padding: 18px;
+	margin: 20px 0 20px 0;
+	background: #f4f3f4;
+}
+
+.bottom-container {
+	padding: 20px 0 20px 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	
+}
+
+.bottom-item {
+	width: 380px;
+	margin: 20px 20px 20px 0;
+}
+
+.bottom-item-image {
+	width: 100%;
+	height: 300px;
+	background-image: url("/img/services-info.png");
+	background-size: cover;
+	background-position: auto;
+}
+
+/****************** END SERVICES PAGE STYLING ***************/
+/************ Start Media Queries ********/
+
+/* Tablet */
+@media (max-width: 800px) {
+    .menu-container {
+    height: 115px;
+    margin-bottom: 60px;
+  }
+  
+  #great-idea-logo-image {
+    width: 100%;
+    background-position: center;
+    order: -1;
+  } 
+  
+  .menu-container nav {
+    height: inherit;
+    justify-content: space-around;
+    
+  }
+
+  .menu-container nav a {
+    text-decoration: bold;
+  }
+
+  .header-container {
+    margin-bottom: 70px; 
+  }
+
+  .flex-column {
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  .header-container .flex-column {
+    height: unset;    
+  }
+
+  .header-container .flex-column h1 {
+    margin-bottom: 25px;
+  }
+  
+  #header-item-image {
+    display: none;
+  }
+
+  /****************** SERVICES STYLING **************/
+  .services-header-image {
+    height: 100px;
+  }
+
+  .services-header-container {
+    padding: 15px;
+  }
+
+  .services-content-container {
+    width: 95%;
+    justify-content: space-around;
+  }
+
+  .services-content-item {
+    width: 95%;
+  }
+
+  .bottom-container {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .bottom-item {
+    width: 80%;
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .site-container{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  .menu-container {
+    height: unset;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  .menu-container nav {
+    
+    flex-flow: column nowrap;    
+  }
+
+  .menu-container nav:last-child {
+    border-bottom: 1px solid black;
+  }
+
+  .menu-container nav .menu-item a {
+    font-size: 18px;
+  }
+
+  .menu-item {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+  }
+  .small {
+    width: 100%;
+  }
+
+  #great-idea-logo-image {
+    margin-bottom: 20px;
+    border-top: 0;
+  }
+
+  #features-about-section {
+    flex-direction: column;
+  }
+
+  #services-product-vision-section {
+    flex-direction: column;
+  }
+
+  #mid-page-accent-image {
+    height: 100px;
+    background-size: cover;
+  }  
+}
 
